@@ -86,6 +86,12 @@
     .two-col { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 30px; }
     .plain-list { list-style: none; padding: 0; }
     .plain-list li { margin-bottom: 8px; }
+    .courses li { margin-bottom: 14px; }
+    .courses .meta { display: block; margin: 2px 0 0; }
+    .courses .sub { list-style: none; margin: 4px 0 0; padding: 0; }
+    .courses .sub li { margin-bottom: 2px; }
+    .nowrap { white-space: nowrap; }
+    .courses .dur { color: var(--muted); font-size: 0.92rem; white-space: nowrap; }
 
     footer { padding: 32px 0 48px; color: var(--muted); font-size: 0.85rem; }
 
@@ -217,23 +223,27 @@
           <h2>Formación académica</h2>
           <div class="item">
             <h3>Máster en Data Science, Big Data &amp; Business Analytics</h3>
-            <p class="meta">Universidad Complutense de Madrid · Oct 2026 – actualidad</p>
+            <p class="meta">Universidad Complutense de Madrid · <span class="nowrap">Oct&nbsp;2026&nbsp;–&nbsp;actualidad</span></p>
           </div>
           <div class="item">
             <h3>Grado en Marketing e Investigación de Mercados</h3>
-            <p class="meta">Universidad de Granada · Sep 2022 – Jun 2026</p>
+            <p class="meta">Universidad de Granada · <span class="nowrap">Sep&nbsp;2022&nbsp;–&nbsp;Jun&nbsp;2026</span></p>
           </div>
         </div>
         <div>
           <h2>Formación adicional</h2>
-          <ul class="plain-list">
-            <li><a href="https://drive.google.com/file/d/148za3Z5KDLCbM_wmxBqvlqxwWx7rLkpL/view?usp=drive_link" target="_blank" rel="noopener">Business Intelligence</a> · Andalucía Nexus +Lab Elevate · 2026 · 150 h</li>
-            <li><a href="https://drive.google.com/file/d/1xmqwgfv1tFqmFzMoAkgQZCrbO1-ICkX-/view?usp=sharing" target="_blank" rel="noopener">Revenue Management con herramientas digitales</a> · Andalucía Nexus +Lab Elevate · 2026 · 150 h</li>
-            <li>Banco Santander Open Academy:
-              <a href="https://drive.google.com/file/d/1y4RBIO_CE4WTzRwovdImMEY6eJVFVruH/view?usp=sharing" target="_blank" rel="noopener">Introducción a la Ciencia de Datos</a> (2026 · 6 h),
-              <a href="https://drive.google.com/file/d/1yOh6DzLCdQe5a0aHXYNBcdhvtOKbWNYk/view?usp=sharing" target="_blank" rel="noopener">Python</a> (2026 · 8 h),
-              <a href="https://drive.google.com/file/d/1tHwDH1XuEQ0hxFxi-0G5y_U-zUvKWBoe/view?usp=sharing" target="_blank" rel="noopener">Power BI</a> (2025 · 8 h),
-              <a href="https://drive.google.com/file/d/1PwMSjvTHWo6a8qkCY24aMaAufmq7FktY/view?usp=sharing" target="_blank" rel="noopener">Prompting</a> (2025 · 8 h)</li>
+          <ul class="plain-list courses">
+            <li><a href="https://drive.google.com/file/d/148za3Z5KDLCbM_wmxBqvlqxwWx7rLkpL/view?usp=drive_link" target="_blank" rel="noopener">Business Intelligence</a>
+              <span class="meta">Andalucía Nexus +Lab Elevate · 2026 · 150&nbsp;h</span></li>
+            <li><a href="https://drive.google.com/file/d/1xmqwgfv1tFqmFzMoAkgQZCrbO1-ICkX-/view?usp=sharing" target="_blank" rel="noopener">Revenue Management con herramientas digitales</a>
+              <span class="meta">Andalucía Nexus +Lab Elevate · 2026 · 150&nbsp;h</span></li>
+            <li>Banco Santander Open Academy
+              <ul class="sub">
+                <li><a href="https://drive.google.com/file/d/1y4RBIO_CE4WTzRwovdImMEY6eJVFVruH/view?usp=sharing" target="_blank" rel="noopener">Introducción a la Ciencia de Datos</a> <span class="dur">(2026&nbsp;·&nbsp;6&nbsp;h)</span></li>
+                <li><a href="https://drive.google.com/file/d/1yOh6DzLCdQe5a0aHXYNBcdhvtOKbWNYk/view?usp=sharing" target="_blank" rel="noopener">Python</a> <span class="dur">(2026&nbsp;·&nbsp;8&nbsp;h)</span></li>
+                <li><a href="https://drive.google.com/file/d/1tHwDH1XuEQ0hxFxi-0G5y_U-zUvKWBoe/view?usp=sharing" target="_blank" rel="noopener">Power&nbsp;BI</a> <span class="dur">(2025&nbsp;·&nbsp;8&nbsp;h)</span></li>
+                <li><a href="https://drive.google.com/file/d/1PwMSjvTHWo6a8qkCY24aMaAufmq7FktY/view?usp=sharing" target="_blank" rel="noopener">Prompting</a> <span class="dur">(2025&nbsp;·&nbsp;8&nbsp;h)</span></li>
+              </ul></li>
           </ul>
         </div>
       </div>
